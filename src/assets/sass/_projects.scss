@@ -1,0 +1,56 @@
+.projects {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .project {
+    width: 30%;
+    padding: 10px;
+    margin: 30px 10px 10px 10px;
+    border: 1px solid #191919;
+    border-radius: 5px;
+    -moz-box-shadow: 1px 1px 3px 2px #191919;
+    -webkit-box-shadow: 1px 1px 3px 2px #191919;
+    box-shadow: -3px 5px 8px 1px rgba($color: #191919, $alpha: 0.8);
+    background: #d4d7e8;
+    .projectTitulo {
+      text-align: center;
+      font-size: 1.3888em;
+      border-bottom: 0.5px solid rgb(41, 41, 41);
+      padding-bottom: 10px;
+      width: 100%;
+      height: 80px;
+      .projectLink {
+        text-decoration: none;
+        color: #4078c0;
+        transition: 0.5s ease-in;
+        .projectIconGit {
+          font-size: 1.4em;
+        }
+        &:hover {
+          color: #6cc644;
+        }
+      }
+    }
+    .projectImage {
+      width: 100%;
+      border-radius: 2px;
+      -moz-box-shadow: 1px 1px 3px 2px #191919;
+      -webkit-box-shadow: 1px 1px 3px 2px #191919;
+      box-shadow: 0px 1px 5px 2px rgba($color: #191919, $alpha: 0.8);
+    }
+    .projectContenido {
+      font-size: 0.94em;
+      height: 100px;
+      border-bottom: 0.5px solid black;
+      padding: 10px;
+      text-align: justify;
+    }
+    .projectLenguajes {
+      font-size: 0.7em;
+      color: #57545c;
+    }
+  }
+  @include search;
+}

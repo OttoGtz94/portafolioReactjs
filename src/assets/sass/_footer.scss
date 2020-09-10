@@ -1,0 +1,55 @@
+.containerFooter {
+    background: #204051;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    .rsContainer {
+        width: 50%;
+        /* background: red; */
+        ul {
+            width: 30%;
+            /* background: gray; */
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                margin: 10px;
+                list-style: none;
+                a {
+                    font-size: 1.66rem;
+                    color: #e4e3e3;
+                    transition: 0.8s ease-in-out;
+                    &:hover {
+                        color: #3b6978;
+                    }
+                }
+            }
+        }
+    }
+    .infSiteContainer {
+        width: 50%;
+        /* background: yellow; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: right;
+        i {
+            font-size: 1rem;
+            margin: 0px 20px;
+            color: #e4e3e3;
+        }
+    }
+    .copyrightContainer {
+        width: 100%;
+       /*  background: green; */
+        text-align: center;
+        span {
+            font-size: 1.38rem;
+            color: #e4e3e3;
+        }
+    }
+}

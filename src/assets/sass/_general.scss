@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-size: $tamanioFuente;
+  font-family: $fuente;
+  width: 100%;
+  max-width: 1900px;
+ /*  min-width: 930px; */
+  max-height: 1080px;
+  min-height: 495px;
+  @include background;
+}

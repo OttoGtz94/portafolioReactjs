@@ -1,0 +1,585 @@
+@media screen and (max-width: 950px) {
+  .home {
+    .contenedorLogo {
+      width: 45%;
+    }
+    .acercaDe {
+      .adMi {
+        .overlay {
+          .modal {
+            width: 70%;
+          }
+        }
+      }
+      .adC {
+        .overlay {
+          .modal {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+  .projects {
+    .project {
+      .projectTitulo {
+        font-size: 1.3rem;
+      }
+      .projectContenido {
+        font-size: 0.9rem;
+      }
+      .projectLenguajes {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .blog {
+    .containerArticles {
+      .article {
+        width: 80%;
+      }
+    }
+  }
+  .contacto {
+    .contenedorRS {
+      .tituloRS {
+        font-size: 1.3rem;
+      }
+      .subcontenedorRS {
+        .redSocial {
+          width: 80%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+    .formulario {
+      .tituloFormulario {
+        font-size: 1.3rem;
+      }
+      .txtFormulario,
+      .txtAreaFormulario,
+      .botonFormulario {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+  .containerFooter {
+    .rsContainer {
+      ul {
+        width: 50%;
+      }
+    }
+    .copyrightContainer {
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  .articlePage {
+    .containerAside {
+      .asideSubContainer {
+        width: 100%;
+        .articleAside {
+          .containerTitle {
+            a {
+              h4 {
+                margin: 0px;
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    .elementoNav {
+      font-size: 1.2rem;
+    }
+  }
+  .home {
+    .contenedorLogo {
+      width: 50%;
+    }
+  }
+  .projects {
+    .project {
+      width: 45%;
+      .projectTitulo {
+        font-size: 1.4rem;
+      }
+      .projectContenido {
+        font-size: 1rem;
+      }
+      .projectLenguajes {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .blog {
+    .headerBlog {
+      .efecto {
+        .contenedorLetras {
+          .palabraEstatica {
+            font-size: 1.5rem;
+          }
+          .botonModal {
+            .letras {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+      .contenedorCategorias {
+        .main {
+          width: 30%;
+        }
+      }
+    }
+    .containerArticles {
+      .article {
+        width: 90%;
+      }
+    }
+  }
+  .contacto {
+    .contenedorRS {
+      .tituloRS {
+        font-size: 1.3rem;
+      }
+      .subcontenedorRS {
+        .redSocial {
+          width: 80%;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+    .formulario {
+      .tituloFormulario {
+        font-size: 1.3rem;
+      }
+      .txtFormulario,
+      .txtAreaFormulario,
+      .botonFormulario {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+  .containerFooter {
+    .rsContainer {
+      ul {
+        li {
+          a {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    .copyrightContainer {
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  .articlePage {
+    .articleSingle {
+      width: 100%;
+    }
+    .containerAside {
+      .asideSubContainer {
+        width: 100%;
+        .articleAside {
+          width: 29%;
+          .containerImg {
+            width: 100%;
+          }
+          .containerTitle {
+            width: 100%;
+          }
+          .containerDescription {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home {
+    .contenedorLogo {
+      width: 70%;
+      .efecto {
+        .contenedorLetras {
+          .botonModal {
+            .letras {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projects {
+    .project {
+      .projectTitulo {
+        font-size: 1rem;
+        height: auto;
+      }
+      .projectContenido {
+        font-size: 0.8rem;
+      }
+      .projectLenguajes {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .blog {
+    .headerBlog {
+      .efecto {
+        .contenedorLetras {
+          .palabraEstatica {
+            font-size: 1.5rem;
+          }
+          .botonModal {
+            .letras {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+      .contenedorCategorias {
+        .main {
+          font-size: 50px;
+        }
+      }
+    }
+    .containerArticles {
+      .article {
+        width: 100%;
+      }
+    }
+  }
+  .contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .contenedorRS {
+      width: 100%;
+      border: none;
+      .tituloRS {
+        display: none;
+      }
+      .subcontenedorRS {
+        .redSocial {
+          width: 20%;
+          font-size: 2rem;
+          height: 60px;
+        }
+      }
+    }
+    .formulario {
+      width: 100%;
+      border: none;
+      .tituloFormulario {
+        font-size: 2rem;
+      }
+      .botonFormulario {
+        height: 60px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .containerFooter {
+    .infSiteContainer {
+      i {
+        font-size: 0.8rem;
+      }
+    }
+    .copyrightContainer {
+      span {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .articlePage {
+    .articleSingle {
+      width: 100%;
+    }
+    .containerAside {
+      .asideSubContainer {
+        .articleAside {
+          width: 90%;
+          .containerImg {
+            width: 60%;
+          }
+          .containerTitle {
+            width: 40%;
+          }
+          .containerDescription {
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav {
+    .elementoNav {
+      font-size: 1rem;
+    }
+  }
+  .home {
+    .contenedorLogo {
+      width: 80%;
+    }
+  }
+  .projects {
+    padding:5px;
+    .project {
+      width: 80%;
+      .projectTitulo {
+        font-size: 2rem;
+        height: auto;
+      }
+      .projectContenido {
+        font-size: 1.3rem;
+        height: auto;
+      }
+      .projectLenguajes {
+        font-size: 1rem;
+      }
+    }
+  }
+  .blog {
+    .headerBlog {
+      .efecto {
+        .contenedorLetras {
+          .botonModal {
+            .letras {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+      .contenedorCategorias {
+        .main {
+          font-size: 40px;
+        }
+      }
+    }
+    .containerArticles {
+      padding: 0px;
+      .article {
+        width: 100%;
+        .articleTitleContainer {
+          width: 100%;
+          padding: 0px 10px;
+        }
+        .articleContentContainer {
+          .articleImageContainer {
+            width: 100%;
+            padding: 0px 10px;
+            margin-bottom: 15px;
+          }
+          .articleTextContainer {
+            width: 100%;
+            .articleContent {
+              height: auto;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .containerFooter {
+    .rsContainer {
+      width: 100%;
+      ul {
+        width: 100%;
+
+        li {
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+    .infSiteContainer {
+      width: 100%;
+      margin: 10px;
+      justify-content: start;
+      i {
+        font-size: 0.8rem;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerIconMenu {
+    display: block;
+    position: fixed;
+    height: 800px;
+    
+  }
+  .iconMenu {
+    display: block;
+    position: fixed;
+    z-index: 100;
+  }
+  .nav {
+    top: 55px;
+    margin-left: -100%;
+    opacity: 0;
+    height: auto;
+    position: fixed;
+    padding: 0px;
+    background: rgba($color: #000000, $alpha: 0.9);
+    z-index: 1000;
+    .elementoNav {
+      width: 100%;
+      height: 85px;
+      border-bottom: 1px solid white;
+      /* margin: 5px; */
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      padding: 10px;
+      &:hover {
+        background: rgba($color: #000000, $alpha: 0.8);
+      }
+    }
+  }
+  .checkedMenu:checked ~ .nav {
+    margin: 0;
+    opacity: 1;
+  }
+  .home {
+    margin-top: 55px;
+    .acercaDe {
+      .adMi,
+      .adC {
+        width: 100%;
+      }
+    }
+  }
+  .projects {
+    margin-top: 55px;
+  }
+  .blog {
+    margin-top: 55px;
+    .headerBlog {
+      .efecto {
+        .contenedorLetras {
+          .palabraEstatica {
+            font-size: 1.2rem;
+          }
+          .botonModal {
+            .letras {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+      .contenedorCategorias {
+        .main {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .articlePage {
+    margin-top: 55px;
+  }
+  .contacto {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home {
+    .contenedorLogo {
+      width: 100%;
+      .efecto {
+        .contenedorLetras {
+          .botonModal {
+            .letras {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .acercaDe {
+      .adMi {
+        .overlay {
+          .modal {
+            width: 90%;
+          }
+        }
+      }
+      .adC {
+        .overlay {
+          .modal {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  .projects {
+    .project {
+      width: 100%;
+      .projectTitulo {
+        font-size: 2rem;
+        height: auto;
+      }
+      .projectContenido {
+        font-size: 1.3rem;
+        height: auto;
+      }
+      .projectLenguajes {
+        font-size: 1rem;
+      }
+    }
+  }
+  .blog {
+    .headerBlog {
+      .efecto {
+        .contenedorLetras {
+          .palabraEstatica {
+            font-size: 1.2rem;
+          }
+          .botonModal {
+            .letras {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+      .contenedorCategorias {
+        .main {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}

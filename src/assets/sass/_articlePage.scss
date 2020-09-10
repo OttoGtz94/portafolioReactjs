@@ -1,0 +1,63 @@
+.articlePage {
+  background: $colorBlancoBlog;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .articleSingle {
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    /*  background: chartreuse; */
+    .asImgContainer {
+      /*  background: red; */
+      width: 90%;
+      margin: 0px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        width: 100%;
+        border-radius: 2px;
+        -moz-box-shadow: 1px 1px 3px 2px #191919;
+        -webkit-box-shadow: 1px 1px 3px 2px #191919;
+        box-shadow: 0px 1px 5px 2px rgba($color: #191919, $alpha: 0.8);
+      }
+    }
+    .asContentContainer {
+      /* background: yellow; */
+      width: 90%;
+      margin: 0px auto;
+      .asTitleContainer {
+        width: 100%;
+        /* background: orange; */
+        text-align: justify;
+        h1 {
+          margin-bottom: 0px;
+          color: $colorVerdeBlog;
+          font-size: 3.5rem;
+        }
+        span {
+          /*  background: rebeccapurple; */
+          color: $colorAzulBlog;
+          font-size: 0.8em;
+        }
+      }
+    }
+    .asTextContainer {
+      /* background: blue; */
+      .asDescriptionContainer {
+        /* background: red; */
+        width: 100%;
+        padding: 30px 0px;
+      }
+      .asContentContainer {
+        /*   background: pink; */
+        width: 100%;
+        padding-bottom: 30px;
+      }
+    }
+    @include Line;
+  }
+  @import "./aside";
+}

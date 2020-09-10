@@ -1,0 +1,51 @@
+.blog {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @import "./headerBlog";
+  @import "./article";
+  @import "./pagination";
+  
+}
+
+@mixin backgroundImg {
+  .creditosimgBlog {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    background: rgba($color: #000000, $alpha: 0.5);
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 25px;
+    opacity: 0.2;
+    transition: 1s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+    a {
+      text-decoration: none;
+      color: wheat;
+      font-size: 0.83em;
+    }
+  }
+  .tituloBlog {
+    margin: 0px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    font-size: 5.5em;
+    color: wheat;
+    text-shadow: 4px 4px 2px rgba(21, 20, 19, 0.8);
+  }
+}
+
+@keyframes blink-caret-white {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffff;
+  }
+}

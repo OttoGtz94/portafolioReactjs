@@ -1,0 +1,40 @@
+.efecto {
+  display: flex;
+  right: 0;
+  margin: 10px;
+  .contenedorLetras {
+    .letras {
+      width: auto;
+      overflow: hidden;
+      border-right: 0.15em solid #bae1ff;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 0.15em;
+      animation: typing 4.5s steps(30, end), blink-caret 0.5s step-end infinite;
+      color: #bae1ff;
+      font-size: 2em;
+      font-family: $fuenteProfesion;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #bae1ff;
+  }
+}

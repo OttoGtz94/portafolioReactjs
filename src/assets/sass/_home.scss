@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100vh - 50px);
+  .contenedorLogo {
+    width: 35%;
+    margin: 5% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    .logo {
+      width: 75%;
+      cursor: pointer;
+      &:hover {
+        animation: girar 5s;
+      }
+    }
+    @import "./efecto";
+  }
+  @import "./acercaDe";
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+

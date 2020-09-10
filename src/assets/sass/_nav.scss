@@ -1,0 +1,61 @@
+.containerIconMenu {
+  background: rgba($color: #000000, $alpha: 0.9);
+  border-bottom: 2px solid $colorFuenteMenu;
+  display: none;
+  height: 50px;
+  top: 80px;
+}
+.checkedMenu {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  
+}
+.iconMenu {
+  font-size: 30px;
+  padding: 10px;
+  transition: 1s linear;
+  color: $colorFuenteMenu;
+  border: 2px solid transparent;
+  display: none;
+  top: -3px;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  background: rgba($color: #000000, $alpha: 1);
+  border-bottom: 2px solid $colorFuenteMenu;
+  /* display: none; */
+  
+}
+.nav {
+  background: rgba($color: #000000, $alpha: 0.5);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* position: fixed; */
+  transition: 0.5s ease-in;
+  .elementoNav {
+    font-size: 1.3em;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    color: $colorFuenteMenu;
+    transition: 0.5s cubic-bezier(2, 2, 2.165, 1);
+    &:hover {
+      color: $colorDorado;
+    }
+    .navIcon {
+      margin-right: 10px;
+    }
+  }
+  .navActivo {
+    border-bottom: 2px solid $colorFuenteMenu;
+    font-size: 1.38em;
+    &:hover {
+      color: $colorFuenteMenu;
+    }
+  }
+}

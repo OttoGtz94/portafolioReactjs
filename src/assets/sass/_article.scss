@@ -1,0 +1,96 @@
+.containerArticles {
+  background: $colorBlancoBlog;
+  width: 100%;
+  /* margin: auto; */
+  padding: 15px;
+
+  .article {
+    border: 2px solid transparent;
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+
+    /* .articleLabelsContainer {
+      .articleLine {
+        width: 30%;
+        height: 0px;
+        display: inline-block;
+        border: 0.8px solid $colorGrisBlog;
+        margin: 0px 6px 6px 0px;
+      }
+      .articleLinkLabel {
+        text-decoration: none;
+        color: #3b6978;
+      }
+    } */
+    @include Line;
+    .articleTitleContainer {
+      width: 100%;
+      text-align: justify;
+      margin: auto;
+      .articleTitle {
+        margin-bottom: 0px;
+        color: $colorVerdeBlog;
+        /* a {
+          text-decoration: none;
+          margin: 0px;
+        } */
+      }
+      .articleDate {
+        color: $colorAzulBlog;
+        font-size: 0.8em;
+      }
+    }
+    .articleContentContainer {
+      /* background: red; */
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      .articleImageContainer {
+        /* background: green; */
+        width: 60%;
+        .articleImage {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .articleTextContainer {
+        width: 40%;
+        padding: 0px 10px;
+        text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        .articleContent {
+          width: 100%;
+          /* background: gray; */
+          height: 250px;
+          overflow: hidden;
+          font-size: 1.2rem;
+        }
+        .articleButton {
+          width: 100%;
+          background: $colorVerdeBlog;
+          height: 3.3333rem;
+          color: $colorBlancoBlog;
+          font-size: 1.38rem;
+          border: 1px solid transparent;
+          border-radius: 2px;
+          transition: 0.5s ease-in-out;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          cursor: pointer;
+          &:hover {
+            background: $colorAzulBlog;
+          }
+        }
+      }
+    }
+  }
+  @include search;
+}
+

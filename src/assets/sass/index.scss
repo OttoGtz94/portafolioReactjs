@@ -1,0 +1,23 @@
+$colorFuenteMenu: #dadada;
+$colorDorado: #bea679;
+$colorBlancoBlog: #e4e3e3;
+$colorGrisBlog: #636363;
+$colorVerdeBlog: #3b7869;
+$colorAzulBlog: #3b6978;
+$fuenteTitulo: 'Noto Sans JP', sans-serif;
+$fuenteProfesion: 'Source Code Pro', monospace;
+$fuente: 'Roboto', sans-serif;
+$tamanioFuente: 18px;
+
+@import "./mixin";
+@import "./loading";
+@import "./general";
+@import "./nav";
+@import "./home";
+@import "./projects";
+@import "./blog";
+@import "./articlePage";
+@import "./contacto";
+@import "./footer";
+@import "./error404";
+@import "./medias";

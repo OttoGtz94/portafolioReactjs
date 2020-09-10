@@ -1,0 +1,47 @@
+.navigationContainer {
+ /*  background: rebeccapurple; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .paginationContainer {
+    /* background: red; */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    .pageItem {
+     /*  margin: 2px; */
+      width: 70px;
+      height: 70px;
+      /* background: chartreuse; */
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      font-size: 1.38rem;
+      a {
+        /* border: 2px solid #204051; */
+        border-radius: 360%;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        /* background: rgba($color: #3b6978, $alpha: 0.5); */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        color: #3b6978;
+        &:hover {
+
+        }
+        .pageItemSelected {
+            /* font-size: 1rem; */
+            margin-right: 5px;
+        }
+      }
+    }
+  }
+}

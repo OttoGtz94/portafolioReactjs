@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Generador de contraseña",
+    "contenido": "Es un generador que crea un password con más de 10 caracteres y los guarda en una BD de mySQL",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/5/5b/India_Gate_600x400.jpg",
+    "lenguajes": "Java"
+  },
+  {
+    "id": 2,
+    "title": "Fitcon",
+    "contenido": "Sistema gestor de cuentas, donde puedes ingresar clientes, cuentas y conocer sus saldos, va conectado a una BD de mySQL, además cuenta con 4 idiomas y logueo",
+    "img": "https://blog.selfbank.es/wp-content/uploads/2018/07/iStock-889946406-600x400.jpg",
+    "lenguajes": "PHP, JavaScript, HTML, CSS, jQuery"
+  },
+  {
+    "id": 3,
+    "title": "Caferouv",
+    "contenido": "Pagina Web para una cafetería",
+    "img": "https://www.cisco.com/c/dam/assets/swa/img/600/GSP00579-600x400.jpg",
+    "lenguajes": "JavaScript, HTML, CSS, jQuery"
+  },
+  {
+    "id": 4,
+    "title": "Tatto Master",
+    "contenido": "Sitio Web para un estudio de tatuajes donde muestra información del tatuador, sus mejores tatuajes y un formulario para contactar",
+    "img": "https://st3.ning.com/topology/rest/1.0/file/get/2079960952?profile=RESIZE_710x&width=600",
+    "lenguajes": "JavaScript, HTML, CSS, jQuery"
+  },
+  {
+    "id": 5,
+    "title": "Equipo de futbol FC",
+    "contenido": "Sitio webno Oficial del equipo Los coyotes de Zacatecas, donde muestra sus noticias, proximos juegos y jugadores.",
+    "img": "https://onlinepngtools.com/images/examples-onlinepngtools/purple-flowers.png",
+    "lenguajes": "JavaScript, HTML, CSS, jQuery"
+  },
+  {
+    "id": 6,
+    "title": "Dragon Ball Information",
+    "contenido": "Podras conocer los diferentes personajes de Dragon Ball, con ayuda de una API Free",
+    "img": "https://assets.metrolatam.com/cl/2013/02/28/foto_0000000120130228160649-600x400.jpg",
+    "lenguajes": "ECMAScript6, JavaScript, HTML, CSS"
+  }
+]

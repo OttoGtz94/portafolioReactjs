@@ -1,0 +1,74 @@
+$htmlColor: #e34f26;
+$cssColor: #196eb3;
+$bootstrapColor: #7038bd;
+$sassColor: #c76494;
+$phpColor: #8892be;
+$laravelCOlor: #f72c1f;
+$javascriptColor: #f7df1e;
+$reactColor: #00d8ff;
+$vueColor: #42b883;
+$angularColor: #b52e31;
+$nodeColor: #6cc24a;
+$databaseColor: #7C7C7C;
+$windowsColor: #0078d7;
+$linuxColor: #020202;
+$ubuntuColor: #dd4814;
+$centosColor: #4D4883;
+
+.iconosModal {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  .iconCon {
+    font-size: 2.2em;
+    margin: 5px;
+  }
+  .html5Icon {
+    color: $htmlColor;
+  }
+  .css3Icon {
+    color: $cssColor;
+  }
+  .bootstrapIcon {
+    color: $bootstrapColor;
+  }
+  .sassIcon {
+    color: $sassColor;
+  }
+  .phpIcon {
+    color: $phpColor;
+  }
+  .laravelIcon {
+    color: $laravelCOlor;
+  }
+  .js-squareIcon {
+      color: $javascriptColor;
+  }
+  .reactIcon {
+      color: $reactColor;
+  }
+  .vuejsIcon {
+      color: $vueColor;
+  }
+  .angularIcon {
+      color: $angularColor;
+  }
+  .nodeIcon {
+      color: $nodeColor;
+  }
+  .databaseIcon{
+      color: $databaseColor;
+  }
+  .windowsIcon{
+      color: $windowsColor;
+  }
+  .linuxIcon{
+      color: $linuxColor;
+  }
+  .ubuntuIcon{
+      color: $ubuntuColor;
+  }
+  .centosIcon {
+      color: $centosColor;
+  }
+}

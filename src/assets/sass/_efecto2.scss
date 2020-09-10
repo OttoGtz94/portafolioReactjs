@@ -1,0 +1,140 @@
+.main {
+  display: block;
+  width: 20%;
+  height: 50px;
+  color: rgb(197, 30, 30);
+  font-size: 68px;
+  font-family: arial;
+  font-weight: bold;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  /* background: green; */
+  
+  .text {
+    display: block;
+    width: 100%;
+    height: inherit;
+    color: rgb(223, 224, 226);
+    font-size: 0.5em;
+    font-family: arial;
+    font-weight: bold;
+    left: 2px;
+    top: 0px;
+    position: absolute;
+    overflow: hidden;
+    animation-name: textBlink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* background: purple; */
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    
+  }
+  .shadow {
+    position: absolute;
+    width: inherit;
+    height: 40px;
+    overflow: hidden;
+    animation-name: shadowDown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    .viewport {
+      position: relative;
+      width: inherit;
+      height: 200px;
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        animation-name: shadowTextUp;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+@keyframes textBlink {
+  0% {
+    opacity: 1;
+    left: 2px;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.8;
+    left: -2px;
+  }
+  71% {
+    opacity: 0.8;
+    left: 0px;
+  }
+  75% {
+    opacity: 0.8;
+    left: 1px;
+  }
+  100% {
+    opacity: 7;
+    left: 0px;
+  }
+}
+
+@keyframes shadowDown {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: 20px;
+  }
+  20% {
+    top: 30px;
+  }
+  40% {
+    top: 35px;
+  }
+  60% {
+    top: 50px;
+  }
+  70% {
+    top: 20px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+@keyframes shadowTextUp {
+  0% {
+    top: 0px;
+  }
+  10% {
+    top: -20px;
+    opacity: 0.5;
+  }
+  20% {
+    top: -30px;
+    opacity: 1;
+  }
+  40% {
+    top: -35px;
+  }
+  60% {
+    top: -50px;
+    opacity: 0.5;
+  }
+  70% {
+    top: -20px;
+  }
+  100% {
+    top: -10px;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,27 @@
+.acercaDe {
+  width: 100%;
+  /* bottom: 0; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  .adMi {
+    @import "./efecto";
+    @import "./_modal.scss";
+    @include efectosModal;
+  }
+  .adC {
+    @import "./efecto";
+    @import "./_modal.scss";
+    @include efectosModal;
+
+    .overlay {
+      .modal {
+        .contenidoModal {
+          @import "./iconosColors";
+        }
+      }
+    }
+  }
+}
