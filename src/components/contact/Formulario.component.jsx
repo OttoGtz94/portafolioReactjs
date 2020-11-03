@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
+import { Form } from "react-advanced-form";
 
 export default class Formulario extends Component {
   formularioRef = React.createRef();
@@ -9,9 +10,10 @@ export default class Formulario extends Component {
   siteRef = React.createRef();
   state = {
     user: {},
+    flag: "",
   };
   recibirFormulario = (e) => {
-    e.preventDefault();
+    /* e.preventDefault(); */
     if (!this.nombreRef.current.value) {
       alert("Escribe tu nombre");
     } else if (!this.correoRef.current.value) {
@@ -39,6 +41,7 @@ export default class Formulario extends Component {
           " " +
           this.mensajeRef.current.value
       ); */
+      console.log(emailjs);
       emailjs
         .sendForm(
           "service_j4exxhi",
@@ -48,7 +51,7 @@ export default class Formulario extends Component {
         )
         .then(
           (result) => {
-            alert("Mensaje enviado");
+            /* alert("Mensaje enviado"); */
             console.log(result.text);
           },
           (error) => {
@@ -57,53 +60,66 @@ export default class Formulario extends Component {
           }
         );
       this.setState({
-        user: user,
+        user: {},
+        flag: "enviado",
       });
     }
   };
 
+  clearForm = (e) => {
+    e.preventDefault();
+    alert("Formulario enviado");
+  };
+
   render() {
     return (
-      <form
-        className="formulario"
-        onSubmit={this.recibirFormulario}
-        ref={this.formularioRef}
-      >
-        <h4 className="tituloFormulario">Escribeme un mensaje</h4>
-        <input
-          type="hidden"
-          value="Portafolio Web"
-          name="site_web"
-          ref={this.siteRef}
-        />
-        <input
-          type="text"
-          placeholder="Nombre"
-          className="txtFormulario"
-          ref={this.nombreRef}
-          name="user_name"
-        />
-        <input
-          type="email"
-          placeholder="Correo"
-          className="txtFormulario"
-          ref={this.correoRef}
-          name="user_email"
-        />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Escribe tu mensaje"
-          className="txtAreaFormulario"
-          ref={this.mensajeRef}
-          name="user_message"
-        ></textarea>
-        <button type="submit" className="botonFormulario">
-          Enviar
-        </button>
-      </form>
+      <React.Fragment>
+        <form
+          className="formulario"
+          onSubmit={this.recibirFormulario}
+          ref={this.formularioRef}
+        >
+          <h4 className="tituloFormulario">Escribeme un mensaje</h4>
+          <input
+            type="hidden"
+            value="Portafolio Web"
+            name="site_web"
+            ref={this.siteRef}
+          />
+          <input
+            type="text"
+            placeholder="Nombre"
+            className="txtFormulario"
+            ref={this.nombreRef}
+            name="user_name"
+          />
+          <input
+            type="email"
+            placeholder="Correo"
+            className="txtFormulario"
+            ref={this.correoRef}
+            name="user_email"
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Escribe tu mensaje"
+            className="txtAreaFormulario"
+            ref={this.mensajeRef}
+            name="user_message"
+          ></textarea>
+          <button
+            type="submit"
+            className="botonFormulario"
+            /* onClick={this.clearForm} */
+          >
+            Enviar
+          </button>
+          {this.state.flag === "enviado" ? alert("Enviado, gracias.") : ""}
+        </form>
+      </React.Fragment>
     );
   }
 }

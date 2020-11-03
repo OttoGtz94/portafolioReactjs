@@ -30,7 +30,7 @@ export default class RedesSociales extends Component {
             iconoS={<FontAwesomeIcon icon={faFacebookF} />}
           />
           <RedSocial
-            enlace="https://www.instagram.com/toto_lml/"
+            enlace="https://www.instagram.com/ottogtz_dev/"
             claseIcono={"redSocial iconIns"}
             iconoS={<FontAwesomeIcon icon={faInstagram} />}
           />

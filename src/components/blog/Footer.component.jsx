@@ -39,7 +39,7 @@ export default class Footer extends Component {
             </li>
             <li>
               <RedSocial
-                enlace="https://www.instagram.com/toto_lml/"
+                enlace="https://www.instagram.com/ottogtz_dev/"
                 claseIcono={"redSocial iconGit"}
                 iconoS={<FontAwesomeIcon icon={faInstagram} />}
               />
